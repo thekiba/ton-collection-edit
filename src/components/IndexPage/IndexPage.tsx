@@ -1,4 +1,5 @@
 import {TransferJetton} from "@/components/TransferJetton";
+import {TransferNft} from "@/components/TransferNft";
 import { ApiSettings } from '../ApiSettings'
 import { EditNftCollection } from '../EditNftCollection'
 import { EditNftSingle } from '../EditNftSingle'
@@ -36,6 +37,7 @@ export function IndexPage() {
           <Tab>Edit Collection Owner</Tab>
           <Tab>Edit Single Nft</Tab>
           <Tab>Edit Editable Nft</Tab>
+          <Tab>Transfer Nft</Tab>
 
           {/* <Tab>Deploy Telemint Numbers Collection</Tab> */}
           <Tab>Deploy Telemint Numbers Nft</Tab>
@@ -67,6 +69,9 @@ export function IndexPage() {
         </TabPanel>
         <TabPanel forceRender={true}>
           <EditNftEditable />
+        </TabPanel>
+        <TabPanel forceRender={true}>
+          <TransferNft />
         </TabPanel>
 
         {/* <TabPanel>
